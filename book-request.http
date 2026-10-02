@@ -1,0 +1,26 @@
+### 1. 查所有书
+GET http://localhost:8080/API/V1/books
+
+### 2. 新增一本书
+POST http://localhost:8080/API/V1/books
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Robert C. Martin"
+}
+
+### 3. 查 id 为 1 的书
+GET http://localhost:8080/API/V1/books/1
+
+### 4. 更新 id 为 1 的书
+PUT http://localhost:8080/API/V1/books/1
+Content-Type: application/json
+
+{
+  "title": "Clean Code (2nd Edition)",
+  "author": "Robert C. Martin"
+}
+
+### 5. 删除 id 为 1 的书
+DELETE http://localhost:8080/API/V1/books/1
