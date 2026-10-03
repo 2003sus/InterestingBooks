@@ -1,6 +1,6 @@
 services:
   db:
-    image: postgres:latest
+    image: pgvector/pgvector:pg18
     container_name: postgres-spring-boot
     environment:
       POSTGRES_DB: interestingbooks

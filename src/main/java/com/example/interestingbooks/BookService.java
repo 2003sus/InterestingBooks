@@ -23,6 +23,7 @@ public class BookService {
     }
 
     public Book addBook(Book book) {
+        book.setId(null);
         if (bookRepository.existsByTitle(book.getTitle())) {
             throw new DuplicateBookException(book.getTitle());
         }
